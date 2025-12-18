@@ -6,75 +6,71 @@
 
 .app {
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 20px;
+  background: #f0f2f5;
+  border-radius: 8px;
   padding: 3rem 2rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
   min-height: 500px;
 }
 
 .app h1 {
-  color: white;
+  color: #1890ff;
   margin-bottom: 2.5rem;
   font-size: 2.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .input-container {
   display: flex;
   gap: 0.75rem;
   margin-bottom: 2.5rem;
-  background: white;
-  padding: 0.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: transparent;
 }
 
 .todo-input {
   flex: 1;
   padding: 0.875rem 1.25rem;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
   font-size: 1rem;
   transition: all 0.3s;
-  background: #f8f9fa;
+  background: white;
 }
 
 .todo-input:focus {
   outline: none;
-  background: white;
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
 }
 
 .add-button {
   padding: 0.875rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1890ff;
   color: white;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid #1890ff;
+  border-radius: 6px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .add-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  background: #40a9ff;
+  border-color: #40a9ff;
 }
 
 .add-button:active {
-  transform: translateY(0);
+  background: #096dd9;
+  border-color: #096dd9;
 }
 
 .todos-container {
   text-align: left;
   background: white;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
 }
 
 .empty-message {
@@ -97,58 +93,57 @@
   gap: 1rem;
   padding: 1.25rem;
   margin-bottom: 0.75rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  border-radius: 12px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
   transition: all 0.3s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .todo-item:hover {
-  transform: translateX(5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background: #e6f7ff;
+  border-color: #1890ff;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.15);
 }
 
 .todo-item.completed .todo-text {
   text-decoration: line-through;
   color: #999;
-  opacity: 0.7;
 }
 
 .todo-checkbox {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
-  accent-color: #667eea;
-  transform: scale(1.2);
+  accent-color: #1890ff;
 }
 
 .todo-text {
   flex: 1;
   font-size: 1.05rem;
   color: #333;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .delete-button {
   padding: 0.5rem 1.25rem;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: white;
-  border: none;
-  border-radius: 8px;
+  background: white;
+  color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.3s;
-  box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);
 }
 
 .delete-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.5);
+  background: #ff4d4f;
+  color: white;
 }
 
 .delete-button:active {
-  transform: scale(0.95);
+  background: #d9363e;
+  border-color: #d9363e;
 }
 
 .stats {
@@ -156,24 +151,23 @@
   justify-content: space-around;
   margin-top: 2rem;
   padding: 1.25rem;
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-  border-radius: 12px;
+  background: #e6f7ff;
+  border-radius: 6px;
   font-size: 1rem;
-  color: white;
-  font-weight: 600;
-  box-shadow: 0 4px 15px rgba(250, 112, 154, 0.3);
+  color: #1890ff;
+  font-weight: 500;
+  border: 1px solid #91d5ff;
 }
 
 .stats span {
-  font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
 }
 
 /* 添加动画效果 */
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
